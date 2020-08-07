@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.coolmath4kids.com/sites/default/files/practice-tool/start.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Aug 2020 11:45:39 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>Practice Tool</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="font/font-awesome/css/font-awesome.min.css">
+<script src="jquery.min.js"></script>
+<script type="text/javascript" src="jspdf.min.js"></script>
+<script type="text/javascript" src="js/timer.js"></script>
+<script type="text/javascript">
+$( document ).ready(function() {
+  if (/MSIE 11/i.test(navigator.userAgent)) {
+    $('.promo-container').html('<img src="img/certificate-promo-ie.png" />');
+  }
+  if (/MSIE 10/i.test(navigator.userAgent)) {
+    $('.promo-container').html('<img src="img/certificate-promo-ie.png" />');
+  }
+
+  if (/MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
+    $('.promo-container').html('<img src="img/certificate-promo-ie.png" />');
+  }
+
+  if (/Edge\/\d./i.test(navigator.userAgent)){
+    $('.promo-container').html('<img src="img/certificate-promo-ie.png" />');
+  }
+});
+
+</script>
+<base target="_parent" />
+</head>
+<body>
+
+ <div class="quiz-landing-container" style="display: inline-block;float: left;margin-left:200px;">
+  <div class="game-header landing" id="landingHeader">
+    <h1><img src="img/subject-headers/title-select-a-quiz.png" class="subject-image" /></h1>
+  </div>
+  <div class='subject-box' id='addition-box'>
+    <a href="../../../../quizzes/addition.html" class="addition-landing">Addition Quizzes</a>    
+  </div>
+
+ </div>
+ <div class="promo-container" style="float: left;display: inline-block;margin-top: 108px;">
+   <img src="img/certificate-promo.png" />
+ </div>
+</body>
+
+
+<!-- Mirrored from www.coolmath4kids.com/sites/default/files/practice-tool/start.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Aug 2020 11:45:50 GMT -->
+</html>

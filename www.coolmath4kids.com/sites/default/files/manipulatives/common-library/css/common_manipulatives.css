@@ -1,0 +1,590 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(fonts/MarkSimonsonProximaNovaSoftBold.otf); }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(fonts/MarkSimonsonProximaNovaSoftRegular.otf); }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(fonts/MarkSimonson_ProximaNovaSoftRegularIE.eot);
+  src: url(fonts/MarkSimonson_ProximaNovaSoftRegularIEd41d.eot?#iefix) format("embedded-opentype"); }
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%; }
+
+body {
+  font-family: ProximaNova;
+  background-image: url(../images/manipulatives_bg.png); }
+
+img {
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none; }
+
+.manipulatives {
+  /*** Left ToolBar CSS ***/
+  /*** End of Left ToolBar CSS ***/
+  /*** Calculator CSS ***/
+  /*** End of Calculator CSS ***/
+  /*** Paint CSS ***/
+  /*** End of Paint CSS ***/
+  /*** How it works CSS ***/
+  /***End of How it works CSS ***/ }
+  .manipulatives #workspace {
+    width: inherit;
+    background-image: url(../images/manipulatives_bg.png); }
+  .manipulatives #about_div {
+    width: 100%; }
+    .manipulatives #about_div .about_title {
+      font-weight: bold;
+      font-size: 18px;
+      letter-spacing: 0.5px;
+      font-family: ProximaNova;
+      padding-top: 25px;
+      padding-bottom: 12px;
+      padding-left: 74px; }
+    .manipulatives #about_div .about_text {
+      font-weight: bold;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      font-family: ProximaNova;
+      padding-bottom: 18px;
+      padding-bottom: 10px;
+      padding-left: 74px; }
+      .manipulatives #about_div .about_text .line_one {
+        padding-bottom: 10px; }
+    .manipulatives #about_div .other_manipulatives {
+      font-weight: bold;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      font-family: ProximaNova;
+      padding-bottom: 22px;
+      padding-left: 74px; }
+      .manipulatives #about_div .other_manipulatives .other_link {
+        color: #0966e5 !important;
+        text-decoration: none; }
+  .manipulatives .cursor_canvas {
+    cursor: crosshair; }
+  .manipulatives .deselected_toolbar .duplicate_frame_image, .manipulatives .deselected_toolbar .duplicate_frame_image:hover {
+    background-image: url(../images/toolbar/duplicate.png);
+    opacity: 0.5; }
+  .manipulatives .deselected_toolbar .rotate_table_image, .manipulatives .deselected_toolbar .rotate_table_image:hover {
+    background-image: url(../images/toolbar/rotate.png);
+    opacity: 0.5; }
+  .manipulatives .deselected_toolbar .keypad_image, .manipulatives .deselected_toolbar .keypad_image:hover {
+    background-image: url(../images/toolbar/keypad.png);
+    opacity: 0.5; }
+  .manipulatives .deselected_toolbar .trash_image, .manipulatives .deselected_toolbar .trash_image:hover {
+    background-image: url(../images/toolbar/trash.png);
+    opacity: 0.5; }
+  .manipulatives .deselected_toolbar .color_splashes .color_links .color_icons {
+    opacity: 0.5; }
+    .manipulatives .deselected_toolbar .color_splashes .color_links .color_icons .grey, .manipulatives .deselected_toolbar .color_splashes .color_links .color_icons .grey:hover {
+      background-image: url(../images/toolbar/gray.png); }
+    .manipulatives .deselected_toolbar .color_splashes .color_links .color_icons .blue, .manipulatives .deselected_toolbar .color_splashes .color_links .color_icons .blue:hover {
+      background-image: url(../images/toolbar/blue.png); }
+    .manipulatives .deselected_toolbar .color_splashes .color_links .color_icons .green, .manipulatives .deselected_toolbar .color_splashes .color_links .color_icons .green:hover {
+      background-image: url(../images/toolbar/green.png); }
+    .manipulatives .deselected_toolbar .color_splashes .color_links .color_icons .orange, .manipulatives .deselected_toolbar .color_splashes .color_links .color_icons .orange:hover {
+      background-image: url(../images/toolbar/orange.png); }
+    .manipulatives .deselected_toolbar .color_splashes .color_links .color_icons .red, .manipulatives .deselected_toolbar .color_splashes .color_links .color_icons .red:hover {
+      background-image: url(../images/toolbar/red.png); }
+  .manipulatives #toolbar {
+    bottom: 0px;
+    top: 87px;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    min-height: 1015px;
+    width: 47px;
+    z-index: 101;
+    padding-top: 38px; }
+    .manipulatives #toolbar .duplicate_frame_image {
+      background-image: url(../images/toolbar/duplicate.png);
+      width: 23px;
+      height: 23px;
+      margin-left: 12px;
+      cursor: pointer;
+      margin-bottom: 28px;
+      display: inline-block; }
+    .manipulatives #toolbar .rotate_table_image {
+      background-image: url(../images/toolbar/rotate.png);
+      width: 18px;
+      height: 38px;
+      margin-left: 14.5px;
+      cursor: pointer;
+      margin-bottom: 28px;
+      display: inline-block; }
+    .manipulatives #toolbar .group_image {
+      background-image: url(../images/toolbar/group.png);
+      width: 28px;
+      height: 28px;
+      margin-left: 9.5px;
+      cursor: pointer;
+      margin-bottom: 14px;
+      display: inline-block; }
+    .manipulatives #toolbar .ungroup_image {
+      background-image: url(../images/toolbar/ungroup.png);
+      width: 22px;
+      height: 22px;
+      margin-left: 12.5px;
+      cursor: pointer;
+      margin-bottom: 18px;
+      display: inline-block; }
+    .manipulatives #toolbar .keypad_image {
+      background-image: url(../images/toolbar/keypad.png);
+      width: 22px;
+      height: 22px;
+      margin-left: 13px;
+      cursor: pointer;
+      margin-bottom: 28px;
+      display: inline-block; }
+    .manipulatives #toolbar .pen_tool_image {
+      background-image: url(../images/toolbar/pen.png);
+      width: 17px;
+      height: 21px;
+      margin-left: 15px;
+      cursor: pointer;
+      margin-bottom: 26px;
+      display: inline-block; }
+    .manipulatives #toolbar .trash_image {
+      background-image: url(../images/toolbar/trash.png);
+      width: 19px;
+      height: 20px;
+      margin-left: 14px;
+      cursor: pointer;
+      margin-bottom: 24px;
+      display: inline-block; }
+    .manipulatives #toolbar .color_splashes {
+      height: 184px; }
+      .manipulatives #toolbar .color_splashes .color_links {
+        margin: 0px;
+        padding: 0px;
+        height: 235px;
+        margin-bottom: 30px; }
+        .manipulatives #toolbar .color_splashes .color_links .color_icons {
+          background-repeat: no-repeat;
+          margin-left: 14px;
+          padding-top: 6px;
+          width: 19px;
+          height: 19px;
+          margin-bottom: 5px;
+          overflow: hidden;
+          text-align: center;
+          text-indent: -5000px;
+          cursor: pointer;
+          display: inline-block; }
+        .manipulatives #toolbar .color_splashes .color_links .grey {
+          background-image: url(../images/toolbar/gray.png); }
+        .manipulatives #toolbar .color_splashes .color_links .blue {
+          background-image: url(../images/toolbar/blue.png); }
+        .manipulatives #toolbar .color_splashes .color_links .green {
+          background-image: url(../images/toolbar/green.png); }
+        .manipulatives #toolbar .color_splashes .color_links .orange {
+          background-image: url(../images/toolbar/orange.png); }
+        .manipulatives #toolbar .color_splashes .color_links .red {
+          background-image: url(../images/toolbar/red.png); }
+        .manipulatives #toolbar .color_splashes .color_links .grey:hover {
+          background-image: url(../images/toolbar/gray_hover.png); }
+        .manipulatives #toolbar .color_splashes .color_links .blue:hover {
+          background-image: url(../images/toolbar/blue_hover.png); }
+        .manipulatives #toolbar .color_splashes .color_links .green:hover {
+          background-image: url(../images/toolbar/green_hover.png); }
+        .manipulatives #toolbar .color_splashes .color_links .orange:hover {
+          background-image: url(../images/toolbar/orange_hover.png); }
+        .manipulatives #toolbar .color_splashes .color_links .red:hover {
+          background-image: url(../images/toolbar/red_hover.png); }
+    .manipulatives #toolbar .clear_all_image {
+      background-image: url(../images/toolbar/start_over.png);
+      width: 37px;
+      height: 22px;
+      margin-left: 5.5px;
+      cursor: pointer;
+      margin-bottom: 26px;
+      display: inline-block; }
+    .manipulatives #toolbar .info_image {
+      background-image: url(../images/toolbar/info.png);
+      width: 20px;
+      height: 20px;
+      margin-left: 13.5px;
+      cursor: pointer;
+      margin-bottom: 35px;
+      display: inline-block; }
+  .manipulatives .toolbar_new {
+    height: 1302px;
+    background-repeat: repeat-y !important; }
+  .manipulatives .ui-dialog-titlebar {
+    display: none; }
+  .manipulatives .ui-widget, .manipulatives .ui-widget-content {
+    border: 0px !important;
+    background: transparent !important;
+    height: 400px !important;
+    width: 0px !important;
+    padding: 0px !important; }
+  .manipulatives .ui-dialog .ui-corner-all .ui-widget .ui-widget-content .ui-front .ui-draggable {
+    z-index: 1;
+    position: absolute; }
+  .manipulatives #calculatordialog {
+    padding: 0px;
+    top: 86px;
+    left: -120px;
+    width: 228px !important; }
+    .manipulatives #calculatordialog ul {
+      margin: 0px;
+      padding: 0px; }
+      .manipulatives #calculatordialog ul li {
+        list-style: none; }
+      .manipulatives #calculatordialog ul .content {
+        /*background: #a8d679 none repeat scroll 0 0;*/
+        background-image: url(../images/keypad/bg.png);
+        border-radius: 10px;
+        display: table;
+        padding: 10px 20px 28px 20px;
+        width: 188px; }
+        .manipulatives #calculatordialog ul .content .buttonwrapper {
+          /* .gray:hover{
+            background-image:url(/sites/default/files/manipulatives/common-library/images/keypad/gray_hover.png);
+          } */
+          /* .red:hover{
+            background-image:url(/sites/default/files/manipulatives/common-library/images/keypad/red_hover.png);
+          } */
+          /* .orange:hover{
+            background-image:url(/sites/default/files/manipulatives/common-library/images/keypad/orange_hover.png);
+          } */
+          /* .green:hover{
+            background-image:url(/sites/default/files/manipulatives/common-library/images/keypad/green_hover.png);
+          } */
+          /* .blue:hover{
+            background-image:url(/sites/default/files/manipulatives/common-library/images/keypad/blue_hover.png);
+          } */ }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .button {
+            color: transparent;
+            cursor: pointer;
+            float: left;
+            height: 41px;
+            margin: 2px 3px 2px 2px;
+            position: relative;
+            width: 41px;
+            background-repeat: no-repeat; }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .wide {
+            width: 100%;
+            height: 12px;
+            display: block;
+            margin-top: 5px;
+            float: right;
+            margin-bottom: 5px;
+            margin-right: 0px;
+            cursor: initial; }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .op_row_1 {
+            margin-top: 5px; }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .color_splash {
+            width: 30px;
+            height: 30px;
+            margin-top: 2px;
+            margin-right: 0px !important;
+            border: 2px solid transparent;
+            border-radius: 12px; }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .color_splash:hover, .manipulatives #calculatordialog ul .content .buttonwrapper .calc_hover_class {
+            border: 2px solid #ffffff; }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .close_icon {
+            background-image: url(../images/keypad/close_button.png);
+            background-position: 100% 0%;
+            width: 12px;
+            height: 12px;
+            float: right;
+            cursor: pointer; }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .one {
+            background-image: url(../images/keypad/key_1.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .one:hover {
+            background-image: url(../images/keypad/key_1_hover.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .two {
+            background-image: url(../images/keypad/key_2.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .two:hover {
+            background-image: url(../images/keypad/key_2_hover.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .three {
+            background-image: url(../images/keypad/key_3.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .three:hover {
+            background-image: url(../images/keypad/key_3_hover.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .four {
+            background-image: url(../images/keypad/key_4.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .four:hover {
+            background-image: url(../images/keypad/key_4_hover.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .five {
+            background-image: url(../images/keypad/key_5.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .five:hover {
+            background-image: url(../images/keypad/key_5_hover.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .six {
+            background-image: url(../images/keypad/key_6.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .six:hover {
+            background-image: url(../images/keypad/key_6_hover.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .seven {
+            background-image: url(../images/keypad/key_7.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .seven:hover {
+            background-image: url(../images/keypad/key_7_hover.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .eight {
+            background-image: url(../images/keypad/key_8.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .eight:hover {
+            background-image: url(../images/keypad/key_8_hover.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .nine {
+            background-image: url(../images/keypad/key_9.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .nine:hover {
+            background-image: url(../images/keypad/key_9_hover.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .zero {
+            background-image: url(../images/keypad/key_0.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .zero:hover {
+            background-image: url(../images/keypad/key_0_hover.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .plus {
+            background-image: url(../images/keypad/key_plus.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .plus:hover {
+            background-image: url(../images/keypad/key_plus_hover.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .minus {
+            background-image: url(../images/keypad/key_minus.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .minus:hover {
+            background-image: url(../images/keypad/key_minus_hover.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .multiplication {
+            background-image: url(../images/keypad/key_multiply.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .multiplication:hover {
+            background-image: url(../images/keypad/key_multiply_hover.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .division {
+            background-image: url(../images/keypad/key_percent.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .division:hover {
+            background-image: url(../images/keypad/key_percent_hover.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .equal {
+            background-image: url(../images/keypad/key_equal.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .equal:hover {
+            background-image: url(../images/keypad/key_equal_hover.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .question {
+            background-image: url(../images/keypad/key_quest.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .question:hover {
+            background-image: url(../images/keypad/key_quest_hover.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .fullstop {
+            background-image: url(../images/keypad/key_fullstop.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .fullstop:hover {
+            background-image: url(../images/keypad/key_fullstop_hover.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .comma {
+            background-image: url(../images/keypad/key_comma.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .comma:hover {
+            background-image: url(../images/keypad/key_comma_hover.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .space {
+            background-image: url(../images/keypad/space.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .space:hover {
+            background-image: url(../images/keypad/space_hover.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .backspace {
+            background-image: url(../images/keypad/arrow.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .backspace:hover {
+            background-image: url(../images/keypad/arrow_hover.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .gray {
+            background-image: url(../images/keypad/gray.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .red {
+            background-image: url(../images/keypad/red.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .orange {
+            background-image: url(../images/keypad/orange.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .green {
+            background-image: url(../images/keypad/green.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .blue {
+            background-image: url(../images/keypad/blue.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .left_brace {
+            background-image: url(../images/keypad/key_leftbrace.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .left_brace:hover {
+            background-image: url(../images/keypad/key_leftbrace_hover.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .right_brace {
+            background-image: url(../images/keypad/key_rightbrace.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .right_brace:hover {
+            background-image: url(../images/keypad/key_rightbrace_hover.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .dollar {
+            background-image: url(../images/keypad/key_dollar.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .dollar:hover {
+            background-image: url(../images/keypad/key_dollar_hover.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .backslash {
+            background-image: url(../images/keypad/key_frwdslash.png); }
+          .manipulatives #calculatordialog ul .content .buttonwrapper .backslash:hover {
+            background-image: url(../images/keypad/key_frwdslash_hover.png); }
+  .manipulatives .pentool_hover {
+    width: 130px !important;
+    background-repeat: no-repeat;
+    	/*.open_toolbar{
+    	  position:absolute;
+    	  right:26px;
+    	  top:20px;
+    	  margin-top:0px !important;
+    	}
+    	.horizontal_line{
+    	  position:absolute;
+    	  right:11px;
+    	  top:36px;	
+    	}
+    	.pen_image {
+          position: absolute;
+          right: 21px;
+          top: 144px;
+        }
+    	.eraser_image {
+          position: absolute;
+          right: 20px;
+          top: 203px;
+        }
+    	.clear_drawing {
+          position: absolute;
+          right: 21px;
+          top: 257px;
+        }*/ }
+    .manipulatives .pentool_hover .pen_tool_icons {
+      width: 130px !important;
+      position: relative; }
+      .manipulatives .pentool_hover .pen_tool_icons .custom-tool-tip {
+        left: 65px;
+        position: absolute;
+        z-index: 102; }
+    .manipulatives .pentool_hover .color_picker_section {
+      /*position: absolute;
+      right: 6px;
+      top: 50px;*/
+      width: 64px; }
+  .manipulatives #button_options {
+    position: absolute;
+    top: 188px;
+    left: 1150px;
+    display: none;
+    width: 68px;
+    height: 351px;
+    text-align: center;
+    z-index: 101; }
+    .manipulatives #button_options .open_toolbar {
+      color: transparent;
+      background-image: url(../images/drawingmenu/close_button.png);
+      width: 16px;
+      height: 16px;
+      margin-top: 20px;
+      margin-left: 26px;
+      cursor: pointer; }
+    .manipulatives #button_options .horizontal_line {
+      background-image: url(../images/drawingmenu/hor_separator.png);
+      width: 46px;
+      height: 2px;
+      margin-top: 12px;
+      margin-left: 11px; }
+    .manipulatives #button_options table tr td {
+      padding: 0px !important; }
+      .manipulatives #button_options table tr td .pen_image {
+        background-image: url(../images/drawingmenu/pen.png);
+        width: 25px;
+        height: 31px;
+        margin-top: 19px;
+        margin-left: 18.5px;
+        cursor: pointer; }
+      .manipulatives #button_options table tr td .eraser_image {
+        background-image: url(../images/drawingmenu/eraser.png);
+        width: 28px;
+        height: 30px;
+        margin-top: 25px;
+        margin-left: 17px;
+        cursor: pointer; }
+      .manipulatives #button_options table tr td .clear_drawing {
+        background-image: url(../images/drawingmenu/start_over.png);
+        width: 26px;
+        height: 29px;
+        margin-top: 28px;
+        margin-left: 19px;
+        cursor: pointer; }
+      .manipulatives #button_options table tr td .color_picker_section {
+        margin-top: 20px;
+        margin-left: 0px;
+    /*.color_blue:hover{
+	  background-image:url(/sites/default/files/manipulatives/common-library/images/drawingmenu/blue_hover.png); 
+    }*/
+    /*.color_green:hover{
+	  background-image:url(/sites/default/files/manipulatives/common-library/images/drawingmenu/green_hover.png);
+    }*/
+    /*.color_orange:hover{
+	  background-image:url(/sites/default/files/manipulatives/common-library/images/drawingmenu/orange_hover.png);
+    }*/
+    /*.color_red:hover{
+	  background-image:url(/sites/default/files/manipulatives/common-library/images/drawingmenu/red_hover.png);  
+    }*/
+    /*.color_purple:hover{
+	  background-image:url(/sites/default/files/manipulatives/common-library/images/drawingmenu/purple_hover.png);  
+    }*/
+    /*.color_gray:hover{
+	  background-image:url(/sites/default/files/manipulatives/common-library/images/drawingmenu/gray_hover.png);  
+    }*/ }
+        .manipulatives #button_options table tr td .color_picker_section .pick_color {
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          background-repeat: no-repeat;
+          border: 2px solid transparent;
+          border-radius: 12px;
+          cursor: pointer; }
+        .manipulatives #button_options table tr td .color_picker_section .pick_color:hover {
+          border: 2px solid #ffffff;
+          border-radius: 6px;
+          width: 15px;
+          height: 15px; }
+        .manipulatives #button_options table tr td .color_picker_section .col_1 {
+          margin-right: 1px; }
+        .manipulatives #button_options table tr td .color_picker_section .hover_class {
+          border: 2px solid #ffffff;
+          border-radius: 6px; }
+        .manipulatives #button_options table tr td .color_picker_section .color_blue {
+          background-image: url(../images/drawingmenu/blue.png); }
+        .manipulatives #button_options table tr td .color_picker_section .color_green {
+          background-image: url(../images/drawingmenu/green.png); }
+        .manipulatives #button_options table tr td .color_picker_section .color_orange {
+          background-image: url(../images/drawingmenu/orange.png); }
+        .manipulatives #button_options table tr td .color_picker_section .color_red {
+          background-image: url(../images/drawingmenu/red.png); }
+        .manipulatives #button_options table tr td .color_picker_section .color_purple {
+          background-image: url(../images/drawingmenu/purple.png); }
+        .manipulatives #button_options table tr td .color_picker_section .color_gray {
+          background-image: url(../images/drawingmenu/gray.png); }
+  .manipulatives #infopage {
+    display: none;
+    right: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 927px;
+    margin: 0 auto;
+    z-index: 220; }
+    .manipulatives #infopage .contents-wrapper .contents {
+      margin: 0 10px 10px; }
+    .manipulatives #infopage .info_illus {
+      text-align: center;
+      padding-top: 24px;
+      width: 927px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 220; }
+      .manipulatives #infopage .info_illus img {
+        max-width: 100%; }
+      .manipulatives #infopage .info_illus .close {
+        float: right;
+        margin-left: -32px;
+        margin-top: -17px;
+        position: relative;
+        z-index: 255;
+        cursor: pointer; }
+      .manipulatives #infopage .info_illus .howitworksimg {
+        position: relative;
+        z-index: 250; }
+
+::-moz-selection {
+  background: transparent; }
+
+::selection {
+  background: transparent; }
+
+/*css declaration only for Chrome/Safari*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .manipulatives #about_div .about_title {
+    padding-bottom: 13px; }
+  .manipulatives #about_div .about_text {
+    padding-bottom: 12px !important; }
+  .manipulatives #about_div .other_manipulatives {
+    padding-bottom: 25px !important; } }
+
+/*# sourceMappingURL=common_manipulatives.css.map */

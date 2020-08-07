@@ -1,0 +1,1009 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("fonts/MarkSimonsonProximaNovaSoftBold.otf"); }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("fonts/MarkSimonsonProximaNovaSoftRegular.otf"); }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("fonts/MarkSimonson_ProximaNovaSoftRegularIE.eot"); }
+body {
+  font-family: ProximaNova;
+  background-image: none; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  width: 20px; }
+
+/*** Scroll bar CSS ***/
+#ascrail2000 {
+  display: none !important; }
+
+#ascrail2000-hr {
+  /*background-image:url(/sites/default/files/manipulatives/number-line/images/number_line/toolbarleft/sliderbg.png) !important;*/
+  margin-left: 30px;
+  height: 32px !important; }
+  #ascrail2000-hr .nicescroll-cursors {
+    /*width: 415px !important;*/
+    height: 20px !important;
+    margin-top: 24px;
+    background-image: url(../images/number_line/toolbarleft/scroll_bg.png);
+    border: 0px !important;
+    border-radius: 5px !important;
+    z-index: 103 !important; }
+    #ascrail2000-hr .nicescroll-cursors .left {
+      background-image: url(../images/number_line/toolbarleft/arrow_left.png);
+      width: 11px;
+      height: 11px;
+      display: block;
+      float: left;
+      margin-left: 10px;
+      margin-top: 4px; }
+    #ascrail2000-hr .nicescroll-cursors .right {
+      background-image: url(../images/number_line/toolbarleft/arrow_right.png);
+      width: 11px;
+      height: 11px;
+      display: block;
+      float: right;
+      margin-right: 10px;
+      margin-top: 4px; }
+
+/*** End of scroll bar CSS ***/
+.number-lines-container {
+  overflow-x: hidden;
+  /*** Calculator CSS ***/
+  /*** End of Calculator CSS ***/ }
+  .number-lines-container #workspace {
+    background-image: none;
+    background-color: #ffffff !important;
+    width: auto;
+    margin-top: 90px; }
+  .number-lines-container #about_div {
+    /*padding-top:10px;
+	.other_manipulatives{
+	  padding-bottom:0px;
+	  margin-bottom:-10px;
+	}*/ }
+    .number-lines-container #about_div .about_title, .number-lines-container #about_div .about_text, .number-lines-container #about_div .other_manipulatives {
+      color: #968bd6; }
+  .number-lines-container #overlayDivFrame, .number-lines-container #overlayDivCounter, .number-lines-container #howitworksoverlay, .number-lines-container #numbercircle_submenu_overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    display: none;
+    top: 0px; }
+  .number-lines-container #numbercircle_submenu_overlay {
+    z-index: 102; }
+  .number-lines-container #top_menu_overlay {
+    position: absolute;
+    width: 83%;
+    height: 85px;
+    background-color: #ffffff;
+    opacity: 0.6;
+    top: 0px;
+    left: 226px; }
+  .number-lines-container #howitworksoverlay {
+    z-index: 200;
+    background-image: url(../images/howitworks_bg.png);
+    width: 100%;
+    min-height: 1428px;
+    height: 100%; }
+  .number-lines-container .toolbar_hover {
+    width: 240px !important; }
+  .number-lines-container #toolbar {
+    background-image: url(../images/number_line/toolbarleft/bg.png);
+    background-repeat: repeat-y;
+    min-height: 1255px;
+    padding-top: 0px !important;
+    bottom: 0px !important; }
+    .number-lines-container #toolbar .top_shadow {
+      background-image: url(../images/number_line/toolbarleft/bg.png);
+      width: 47px;
+      height: 2px;
+      -webkit-box-shadow: 0px 2px 2px 0px #adadad;
+      -moz-box-shadow: 0px 2px 2px 0px #adadad;
+      box-shadow: 0px 2px 2px 0px #adadad;
+      margin-bottom: 28px;
+      margin-top: -2px; }
+    .number-lines-container #toolbar .left-icon {
+      display: block;
+      position: relative; }
+      .number-lines-container #toolbar .left-icon .custom-tool-tip {
+        position: absolute;
+        left: 55px;
+        z-index: 102;
+        height: 17px;
+        display: inline-block; }
+      .number-lines-container #toolbar .left-icon .number_circle {
+        background-image: url(../images/number_line/toolbarleft/number_label.png);
+        width: 112px;
+        height: 17px;
+        display: inline-block;
+        margin-top: 10px; }
+      .number-lines-container #toolbar .left-icon .showhide_circle {
+        background-image: url(../images/number_line/toolbarleft/showhide.png);
+        width: 155px;
+        height: 17px;
+        display: inline-block;
+        margin-top: 10px; }
+      .number-lines-container #toolbar .left-icon .tickmark_circle {
+        background-image: url(../images/number_line/toolbarleft/tickmark_label.png);
+        width: 99px;
+        height: 17px;
+        display: inline-block;
+        margin-top: 10px; }
+      .number-lines-container #toolbar .left-icon .duplicate_frame_label {
+        background-image: url(../images/number_line/toolbarleft/duplicate_label.png);
+        width: 165px;
+        height: 17px;
+        display: inline-block; }
+      .number-lines-container #toolbar .left-icon .zoomin_image_label {
+        background-image: url(../images/number_line/toolbarleft/zoomin_label.png);
+        width: 63px;
+        height: 17px;
+        display: inline-block; }
+      .number-lines-container #toolbar .left-icon .zoomout_label {
+        background-image: url(../images/number_line/toolbarleft/zoomout_label.png);
+        width: 73px;
+        height: 17px;
+        display: inline-block; }
+      .number-lines-container #toolbar .left-icon .clear_all_image_label {
+        background-image: url(../images/number_line/toolbarleft/startover_label.png);
+        width: 80px;
+        height: 17px;
+        display: inline-block; }
+      .number-lines-container #toolbar .left-icon .keypad_image_label {
+        background-image: url(../images/number_line/toolbarleft/keypad_label.png);
+        width: 59px;
+        height: 17px;
+        display: inline-block; }
+      .number-lines-container #toolbar .left-icon .pen_tool_image_label {
+        background-image: url(../images/number_line/toolbarleft/dawing_label.png);
+        width: 105px;
+        height: 17px;
+        display: inline-block; }
+      .number-lines-container #toolbar .left-icon .trash_image_label {
+        background-image: url(../images/number_line/toolbarleft/delete_label.png);
+        width: 158px;
+        height: 17px;
+        display: inline-block; }
+      .number-lines-container #toolbar .left-icon .info_image_label {
+        background-image: url(../images/number_line/toolbarleft/help.png);
+        width: 43px;
+        height: 17px;
+        display: inline-block; }
+    .number-lines-container #toolbar .number_options {
+      background-image: url(../images/number_line/toolbarleft/numberoptions.png);
+      width: 19px;
+      height: 29px;
+      margin-left: 13px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      display: inline-block; }
+    .number-lines-container #toolbar .number_options:hover {
+      background-image: url(../images/number_line/toolbarleft/numberoptions_hover.png); }
+    .number-lines-container #toolbar .showhide_numbers {
+      background-image: url(../images/number_line/toolbarleft/showhidenumbers.png);
+      width: 19px;
+      height: 29px;
+      margin-left: 13px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      display: inline-block; }
+    .number-lines-container #toolbar .showhide_numbers:hover {
+      background-image: url(../images/number_line/toolbarleft/showhidenumbers_hover.png); }
+    .number-lines-container #toolbar .newtickmark {
+      background-image: url(../images/number_line/toolbarleft/newtickmark.png);
+      width: 27px;
+      height: 29px;
+      margin-left: 9px;
+      margin-bottom: 23px;
+      cursor: pointer;
+      display: inline-block; }
+    .number-lines-container #toolbar .newtickmark:hover {
+      background-image: url(../images/number_line/toolbarleft/newtickmark_hover.png); }
+    .number-lines-container #toolbar .duplicate_frame_image {
+      background-image: url(../images/number_line/toolbarleft/duplicate.png);
+      width: 21px;
+      height: 21px;
+      margin-bottom: 25px;
+      display: inline-block;
+      margin-left: 11px; }
+    .number-lines-container #toolbar .duplicate_frame_image:hover {
+      background-image: url(../images/number_line/toolbarleft/duplicate_hover.png); }
+    .number-lines-container #toolbar .rotate_table_image:hover {
+      background-image: url(../images/number_line/toolbarleft/rotate_hover.html); }
+    .number-lines-container #toolbar .zoomin_image {
+      background-image: url(../images/number_line/toolbarleft/zoomin.png);
+      width: 21px;
+      height: 21px;
+      margin-top: 2px;
+      margin-bottom: 20px;
+      margin-left: 12px;
+      cursor: pointer;
+      display: inline-block; }
+    .number-lines-container #toolbar .zoomin_image:hover {
+      background-image: url(../images/number_line/toolbarleft/zoomin_hover.png); }
+    .number-lines-container #toolbar .zoomout_image {
+      background-image: url(../images/number_line/toolbarleft/zoomout.png);
+      width: 21px;
+      height: 21px;
+      margin-bottom: 25px;
+      margin-left: 12px;
+      cursor: pointer;
+      display: inline-block; }
+    .number-lines-container #toolbar .zoomout_image:hover {
+      background-image: url(../images/number_line/toolbarleft/zoomout_hover.png); }
+    .number-lines-container #toolbar .keypad_image:hover {
+      background-image: url(../images/number_line/toolbarleft/keypad_hover.png); }
+    .number-lines-container #toolbar .pen_tool_image:hover {
+      background-image: url(../images/number_line/toolbarleft/pen_hover.png); }
+    .number-lines-container #toolbar .trash_image:hover {
+      background-image: url(../images/number_line/toolbarleft/trash_hover.png); }
+    .number-lines-container #toolbar .pen_tool_image {
+      margin-left: 14px; }
+    .number-lines-container #toolbar .clear_all_image {
+      margin-left: 4px; }
+    .number-lines-container #toolbar .keypad_image {
+      margin-left: 12px; }
+    .number-lines-container #toolbar .trash_image {
+      margin-left: 13px; }
+    .number-lines-container #toolbar .seperator {
+      background-image: url(../images/number_line/toolbarleft/divider.png);
+      width: 25px;
+      height: 2px;
+      margin-left: 10px;
+      margin-bottom: 25px; }
+    .number-lines-container #toolbar .second_seperator {
+      background-image: url(../images/number_line/toolbarleft/divider.png);
+      width: 25px;
+      height: 2px;
+      margin-left: 10px;
+      margin-bottom: 27px; }
+    .number-lines-container #toolbar .clear_all_image, .number-lines-container #toolbar .keypad_image {
+      margin-bottom: 25px !important; }
+    .number-lines-container #toolbar .info_image {
+      margin-top: 4px;
+      margin-left: 12.5px; }
+    .number-lines-container #toolbar .clear_all_image:hover {
+      background-image: url(../images/number_line/toolbarleft/start_over_hover.png); }
+    .number-lines-container #toolbar .info_image:hover {
+      background-image: url(../images/number_line/toolbarleft/info_hover.png); }
+  .number-lines-container #numbercircle_submenu {
+    display: none;
+    left: 47px;
+    position: absolute;
+    top: 106px;
+    width: 500px;
+    z-index: 105; }
+    .number-lines-container #numbercircle_submenu .first_content {
+      background-image: url(../images/number_line/toolbarleft/submenu/numbering/bg_total.png);
+      width: 210px;
+      height: 290px;
+      display: inline-block;
+      vertical-align: top; }
+      .number-lines-container #numbercircle_submenu .first_content .title {
+        background-image: url(../images/number_line/toolbarleft/submenu/numbering/title.png);
+        width: 104px;
+        height: 21px;
+        margin-left: 45px;
+        margin-top: 16px; }
+      .number-lines-container #numbercircle_submenu .first_content .divider {
+        background-image: url(../images/number_line/toolbarleft/submenu/numbering/divider.png);
+        width: 138px;
+        height: 2px;
+        margin-left: 45px;
+        margin-top: 16px; }
+      .number-lines-container #numbercircle_submenu .first_content .text, .number-lines-container #numbercircle_submenu .first_content .negative_numbers {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 45px;
+        margin-top: 16px;
+        letter-spacing: 0.5px;
+        cursor: pointer; }
+      .number-lines-container #numbercircle_submenu .first_content .text:hover {
+        color: #51469d; }
+      .number-lines-container #numbercircle_submenu .first_content .negcheckbox {
+        display: inline-block;
+        width: 18px;
+        vertical-align: top; }
+        .number-lines-container #numbercircle_submenu .first_content .negcheckbox input {
+          display: none; }
+        .number-lines-container #numbercircle_submenu .first_content .negcheckbox input[type=checkbox]:checked + .negnumimage {
+          background-image: url(../images/number_line/toolbarleft/submenu/numbering/checked.png);
+          background-repeat: no-repeat;
+          cursor: pointer; }
+        .number-lines-container #numbercircle_submenu .first_content .negcheckbox .negnumimage {
+          float: left;
+          height: 14px;
+          width: 15px;
+          background-image: url(../images/number_line/toolbarleft/submenu/numbering/checkbox.png);
+          cursor: pointer; }
+        .number-lines-container #numbercircle_submenu .first_content .negcheckbox .neglabel {
+          height: 10px;
+          width: 100%;
+          position: relative;
+          display: block;
+          margin-top: 5px;
+          cursor: pointer; }
+      .number-lines-container #numbercircle_submenu .first_content .negnum {
+        display: inline-block;
+        width: 123px;
+        margin-top: -2px !important;
+        margin-left: 0px !important; }
+    .number-lines-container #numbercircle_submenu #numbers_content {
+      display: none;
+      background-image: url(../images/number_line/toolbarleft/submenu/wholenumbers/bg.png);
+      width: 210px;
+      height: 428px;
+      margin-left: -4px; }
+      .number-lines-container #numbercircle_submenu #numbers_content .one {
+        background-image: url(../images/number_line/toolbarleft/submenu/wholenumbers/1.png);
+        width: 140px;
+        height: 25px;
+        margin-top: 17px;
+        margin-left: 40px;
+        cursor: pointer; }
+      .number-lines-container #numbercircle_submenu #numbers_content .one:hover {
+        background-image: url(../images/number_line/toolbarleft/submenu/wholenumbers/1_hover.png); }
+      .number-lines-container #numbercircle_submenu #numbers_content .two {
+        background-image: url(../images/number_line/toolbarleft/submenu/wholenumbers/2.png);
+        width: 140px;
+        height: 25px;
+        margin-top: 36px;
+        margin-left: 40px;
+        cursor: pointer; }
+      .number-lines-container #numbercircle_submenu #numbers_content .two:hover {
+        background-image: url(../images/number_line/toolbarleft/submenu/wholenumbers/2_hover.png); }
+      .number-lines-container #numbercircle_submenu #numbers_content .five {
+        background-image: url(../images/number_line/toolbarleft/submenu/wholenumbers/5.png);
+        width: 140px;
+        height: 25px;
+        margin-top: 37px;
+        margin-left: 40px;
+        cursor: pointer; }
+      .number-lines-container #numbercircle_submenu #numbers_content .five:hover {
+        background-image: url(../images/number_line/toolbarleft/submenu/wholenumbers/5_hover.png); }
+      .number-lines-container #numbercircle_submenu #numbers_content .ten {
+        background-image: url(../images/number_line/toolbarleft/submenu/wholenumbers/10.png);
+        width: 146px;
+        height: 24px;
+        margin-top: 37px;
+        cursor: pointer;
+        margin-left: 40px; }
+      .number-lines-container #numbercircle_submenu #numbers_content .ten:hover {
+        background-image: url(../images/number_line/toolbarleft/submenu/wholenumbers/10_hover.png); }
+      .number-lines-container #numbercircle_submenu #numbers_content .twentyfive {
+        background-image: url(../images/number_line/toolbarleft/submenu/wholenumbers/25.png);
+        width: 146px;
+        height: 24px;
+        margin-top: 39px;
+        margin-left: 40px;
+        cursor: pointer; }
+      .number-lines-container #numbercircle_submenu #numbers_content .twentyfive:hover {
+        background-image: url(../images/number_line/toolbarleft/submenu/wholenumbers/25_hover.png); }
+      .number-lines-container #numbercircle_submenu #numbers_content .hundred {
+        background-image: url(../images/number_line/toolbarleft/submenu/wholenumbers/100.png);
+        width: 156px;
+        height: 24px;
+        margin-top: 33px;
+        margin-left: 40px;
+        cursor: pointer; }
+      .number-lines-container #numbercircle_submenu #numbers_content .hundred:hover {
+        background-image: url(../images/number_line/toolbarleft/submenu/wholenumbers/100_hover.png); }
+      .number-lines-container #numbercircle_submenu #numbers_content .custom {
+        margin-left: 40px;
+        margin-top: 36px; }
+        .number-lines-container #numbercircle_submenu #numbers_content .custom .custom_text {
+          background-image: url(../images/number_line/toolbarleft/submenu/wholenumbers/custom_text.png);
+          width: 65px;
+          height: 29px;
+          display: inline-block; }
+        .number-lines-container #numbercircle_submenu #numbers_content .custom .text_input {
+          background-image: url(../images/number_line/toolbarleft/submenu/wholenumbers/inputbox.png);
+          background-repeat: no-repeat;
+          background-position: 0px 2px;
+          border: 0 none;
+          display: inline-block;
+          height: 24px;
+          vertical-align: top;
+          width: 40px;
+          background-color: transparent;
+          font-size: 16px;
+          font-weight: bold;
+          color: #51469d; }
+        .number-lines-container #numbercircle_submenu #numbers_content .custom .go_btn {
+          background-image: url(../images/number_line/toolbarleft/submenu/wholenumbers/go.png);
+          border: 0px !important;
+          width: 40px;
+          cursor: pointer;
+          height: 24px;
+          display: inline-block;
+          vertical-align: top;
+          margin-left: 5px; }
+        .number-lines-container #numbercircle_submenu #numbers_content .custom .go_btn:hover {
+          background-image: url(../images/number_line/toolbarleft/submenu/wholenumbers/go_hover.png); }
+    .number-lines-container #numbercircle_submenu #fractions_content {
+      display: none;
+      background-image: url(../images/number_line/toolbarleft/submenu/fractions/bg.png);
+      width: 210px;
+      height: 549px;
+      margin-left: -4px; }
+      .number-lines-container #numbercircle_submenu #fractions_content .onebytwo {
+        background-image: url(../images/number_line/toolbarleft/submenu/fractions/1_2.png);
+        width: 141px;
+        height: 38px;
+        margin-top: 11px;
+        margin-left: 40px;
+        cursor: pointer;
+        background-repeat: no-repeat; }
+      .number-lines-container #numbercircle_submenu #fractions_content .onebytwo:hover {
+        background-image: url(../images/number_line/toolbarleft/submenu/fractions/1_2_hover.png); }
+      .number-lines-container #numbercircle_submenu #fractions_content .onebythree {
+        background-image: url(../images/number_line/toolbarleft/submenu/fractions/1_3.png);
+        width: 144px;
+        height: 37px;
+        margin-top: 23px;
+        margin-left: 40px;
+        cursor: pointer;
+        background-repeat: no-repeat; }
+      .number-lines-container #numbercircle_submenu #fractions_content .onebythree:hover {
+        background-image: url(../images/number_line/toolbarleft/submenu/fractions/1_3_hover.png); }
+      .number-lines-container #numbercircle_submenu #fractions_content .onebyfour {
+        background-image: url(../images/number_line/toolbarleft/submenu/fractions/1_4.png);
+        width: 144px;
+        height: 37px;
+        margin-top: 23px;
+        margin-left: 40px;
+        cursor: pointer;
+        background-repeat: no-repeat; }
+      .number-lines-container #numbercircle_submenu #fractions_content .onebyfour:hover {
+        background-image: url(../images/number_line/toolbarleft/submenu/fractions/1_4_hover.png); }
+      .number-lines-container #numbercircle_submenu #fractions_content .onebyfive {
+        background-image: url(../images/number_line/toolbarleft/submenu/fractions/1_5.png);
+        background-repeat: no-repeat;
+        width: 144px;
+        height: 37px;
+        margin-top: 26px;
+        cursor: pointer;
+        margin-left: 40px; }
+      .number-lines-container #numbercircle_submenu #fractions_content .onebyfive:hover {
+        background-image: url(../images/number_line/toolbarleft/submenu/fractions/1_5_hover.png); }
+      .number-lines-container #numbercircle_submenu #fractions_content .onebysix {
+        background-image: url(../images/number_line/toolbarleft/submenu/fractions/1_6.png);
+        background-repeat: no-repeat;
+        width: 144px;
+        height: 37px;
+        margin-top: 24px;
+        margin-left: 40px;
+        cursor: pointer; }
+      .number-lines-container #numbercircle_submenu #fractions_content .onebysix:hover {
+        background-image: url(../images/number_line/toolbarleft/submenu/fractions/1_6_hover.png); }
+      .number-lines-container #numbercircle_submenu #fractions_content .onebyeight {
+        background-image: url(../images/number_line/toolbarleft/submenu/fractions/1_8.png);
+        background-repeat: no-repeat;
+        width: 144px;
+        height: 37px;
+        margin-top: 25px;
+        margin-left: 40px;
+        cursor: pointer; }
+      .number-lines-container #numbercircle_submenu #fractions_content .onebyeight:hover {
+        background-image: url(../images/number_line/toolbarleft/submenu/fractions/1_8_hover.png); }
+      .number-lines-container #numbercircle_submenu #fractions_content .onebynine {
+        background-image: url(../images/number_line/toolbarleft/submenu/fractions/1_9.png);
+        background-repeat: no-repeat;
+        width: 140px;
+        height: 37px;
+        margin-top: 24px;
+        margin-left: 40px;
+        cursor: pointer; }
+      .number-lines-container #numbercircle_submenu #fractions_content .onebynine:hover {
+        background-image: url(../images/number_line/toolbarleft/submenu/fractions/1_9_hover.png); }
+      .number-lines-container #numbercircle_submenu #fractions_content .onebyten {
+        background-image: url(../images/number_line/toolbarleft/submenu/fractions/1_10.png);
+        background-repeat: no-repeat;
+        width: 144px;
+        height: 37px;
+        margin-top: 24px;
+        margin-left: 42px;
+        cursor: pointer; }
+      .number-lines-container #numbercircle_submenu #fractions_content .onebyten:hover {
+        background-image: url(../images/number_line/toolbarleft/submenu/fractions/1_10_hover.png); }
+      .number-lines-container #numbercircle_submenu #fractions_content .onebytwelve {
+        background-image: url(../images/number_line/toolbarleft/submenu/fractions/1_12.png);
+        background-repeat: no-repeat;
+        width: 144px;
+        height: 37px;
+        margin-top: 25px;
+        margin-left: 40px;
+        cursor: pointer; }
+      .number-lines-container #numbercircle_submenu #fractions_content .onebytwelve:hover {
+        background-image: url(../images/number_line/toolbarleft/submenu/fractions/1_12_hover.png); }
+    .number-lines-container #numbercircle_submenu #decimal_content {
+      display: none;
+      background-image: url(../images/number_line/toolbarleft/submenu/decimals/bg.png);
+      width: 210px;
+      height: 366px;
+      margin-left: -4px; }
+      .number-lines-container #numbercircle_submenu #decimal_content .decimal1 {
+        background-image: url(../images/number_line/toolbarleft/submenu/decimals/001.png);
+        width: 159px;
+        height: 24px;
+        margin-top: 18px;
+        margin-left: 40px;
+        cursor: pointer;
+        background-repeat: no-repeat; }
+      .number-lines-container #numbercircle_submenu #decimal_content .decimal1:hover {
+        background-image: url(../images/number_line/toolbarleft/submenu/decimals/001_hover.png); }
+      .number-lines-container #numbercircle_submenu #decimal_content .decimal2 {
+        background-image: url(../images/number_line/toolbarleft/submenu/decimals/01.png);
+        width: 150px;
+        height: 24px;
+        margin-top: 37px;
+        margin-left: 40px;
+        cursor: pointer;
+        background-repeat: no-repeat; }
+      .number-lines-container #numbercircle_submenu #decimal_content .decimal2:hover {
+        background-image: url(../images/number_line/toolbarleft/submenu/decimals/01_hover.png); }
+      .number-lines-container #numbercircle_submenu #decimal_content .decimal3 {
+        background-image: url(../images/number_line/toolbarleft/submenu/decimals/1.png);
+        width: 142px;
+        height: 25px;
+        margin-top: 36px;
+        margin-left: 40px;
+        cursor: pointer;
+        background-repeat: no-repeat; }
+      .number-lines-container #numbercircle_submenu #decimal_content .decimal3:hover {
+        background-image: url(../images/number_line/toolbarleft/submenu/decimals/1_hover.png); }
+      .number-lines-container #numbercircle_submenu #decimal_content .decimal4 {
+        background-image: url(../images/number_line/toolbarleft/submenu/decimals/5.png);
+        background-repeat: no-repeat;
+        width: 148px;
+        height: 24px;
+        margin-top: 36px;
+        cursor: pointer;
+        margin-left: 40px; }
+      .number-lines-container #numbercircle_submenu #decimal_content .decimal4:hover {
+        background-image: url(../images/number_line/toolbarleft/submenu/decimals/5_hover.png); }
+      .number-lines-container #numbercircle_submenu #decimal_content .decimal5 {
+        background-image: url(../images/number_line/toolbarleft/submenu/decimals/25.png);
+        background-repeat: no-repeat;
+        width: 150px;
+        height: 24px;
+        margin-top: 36px;
+        margin-left: 40px;
+        cursor: pointer; }
+      .number-lines-container #numbercircle_submenu #decimal_content .decimal5:hover {
+        background-image: url(../images/number_line/toolbarleft/submenu/decimals/25_hover.png); }
+      .number-lines-container #numbercircle_submenu #decimal_content .decimal6 {
+        background-image: url(../images/number_line/toolbarleft/submenu/decimals/125.png);
+        background-repeat: no-repeat;
+        width: 156px;
+        height: 24px;
+        margin-top: 37px;
+        margin-left: 40px;
+        cursor: pointer; }
+      .number-lines-container #numbercircle_submenu #decimal_content .decimal6:hover {
+        background-image: url(../images/number_line/toolbarleft/submenu/decimals/125_hover.png); }
+  .number-lines-container #button_options {
+    background-image: url(../images/number_line/drawingmenu/bg.png);
+    height: 349px !important; }
+    .number-lines-container #button_options table tr td {
+      padding: 0px !important; }
+      .number-lines-container #button_options table tr td .pen_image:hover {
+        background-image: url(../images/number_line/drawingmenu/pen_hover.png); }
+      .number-lines-container #button_options table tr td .eraser_image:hover {
+        background-image: url(../images/number_line/drawingmenu/eraser_hover.png); }
+      .number-lines-container #button_options table tr td .clear_drawing:hover {
+        background-image: url(../images/number_line/drawingmenu/start_over_hover.png); }
+  .number-lines-container #jumpKeypadSection {
+    position: absolute;
+    width: 228px;
+    height: 370px;
+    top: 175px;
+    left: 90px; }
+    .number-lines-container #jumpKeypadSection .keypadcontainer {
+      background-image: url(../images/number_line/keypad/bg.png);
+      width: 189px;
+      height: 333px;
+      display: block;
+      padding: 10px 20px 28px; }
+      .number-lines-container #jumpKeypadSection .keypadcontainer #close {
+        width: 100%;
+        height: 22px; }
+        .number-lines-container #jumpKeypadSection .keypadcontainer #close .close_icon {
+          background-image: url(../images/number_line/keypad/close_button.png);
+          width: 12px;
+          height: 12px;
+          float: right;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          cursor: pointer; }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .op_row_1 {
+        margin-top: 5px; }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keycolor_splash {
+        width: 30px !important;
+        height: 30px !important;
+        margin-top: 2px;
+        margin-right: 0px !important;
+        border: 2px solid transparent;
+        border-radius: 12px; }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keycolor_splash:hover, .number-lines-container #jumpKeypadSection .keypadcontainer .calc_hover_class {
+        border: 2px solid #ffffff; }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keypadkeys {
+        background-repeat: no-repeat;
+        color: transparent;
+        cursor: pointer;
+        float: left;
+        height: 41px;
+        margin: 2px 3px 2px 2px;
+        position: relative;
+        width: 41px; }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .one {
+        background-image: url(../images/number_line/keypad/key_1.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .one:hover {
+        background-image: url(../images/number_line/keypad/key_1_hover.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .two {
+        background-image: url(../images/number_line/keypad/key_2.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .two:hover {
+        background-image: url(../images/number_line/keypad/key_2_hover.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .three {
+        background-image: url(../images/number_line/keypad/key_3.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .three:hover {
+        background-image: url(../images/number_line/keypad/key_3_hover.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .four {
+        background-image: url(../images/number_line/keypad/key_4.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .four:hover {
+        background-image: url(../images/number_line/keypad/key_4_hover.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .five {
+        background-image: url(../images/number_line/keypad/key_5.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .five:hover {
+        background-image: url(../images/number_line/keypad/key_5_hover.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .six {
+        background-image: url(../images/number_line/keypad/key_6.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .six:hover {
+        background-image: url(../images/number_line/keypad/key_6_hover.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .seven {
+        background-image: url(../images/number_line/keypad/key_7.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .seven:hover {
+        background-image: url(../images/number_line/keypad/key_7_hover.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .eight {
+        background-image: url(../images/number_line/keypad/key_8.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .eight:hover {
+        background-image: url(../images/number_line/keypad/key_8_hover.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .nine {
+        background-image: url(../images/number_line/keypad/key_9.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .nine:hover {
+        background-image: url(../images/number_line/keypad/key_9_hover.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .zero {
+        background-image: url(../images/number_line/keypad/key_0.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .zero:hover {
+        background-image: url(../images/number_line/keypad/key_0_hover.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keyadd {
+        background-image: url(../images/number_line/keypad/key_plus.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keyadd:hover {
+        background-image: url(../images/number_line/keypad/key_plus_hover.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keysub {
+        background-image: url(../images/number_line/keypad/key_minus.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keysub:hover {
+        background-image: url(../images/number_line/keypad/key_minus_hover.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keymult {
+        background-image: url(../images/number_line/keypad/key_multiply.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keymult:hover {
+        background-image: url(../images/number_line/keypad/key_multiply_hover.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keydivs {
+        background-image: url(../images/number_line/keypad/key_percent.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keydivs:hover {
+        background-image: url(../images/number_line/keypad/key_percent_hover.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keyequals {
+        background-image: url(../images/number_line/keypad/key_equal.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keyequals:hover {
+        background-image: url(../images/number_line/keypad/key_equal_hover.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keyquest {
+        background-image: url(../images/number_line/keypad/key_quest.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keyquest:hover {
+        background-image: url(../images/number_line/keypad/key_quest_hover.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keyfullstop {
+        background-image: url(../images/number_line/keypad/key_fullstop.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keyfullstop:hover {
+        background-image: url(../images/number_line/keypad/key_fullstop_hover.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keycomma {
+        background-image: url(../images/number_line/keypad/key_comma.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keycomma:hover {
+        background-image: url(../images/number_line/keypad/key_comma_hover.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keyspace {
+        background-image: url(../images/number_line/keypad/space.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keyspace:hover {
+        background-image: url(../images/number_line/keypad/space_hover.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keybackspace {
+        background-image: url(../images/number_line/keypad/arrow.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keybackspace:hover {
+        background-image: url(../images/number_line/keypad/arrow_hover.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keygray {
+        background-image: url(../images/number_line/keypad/gray.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keyred {
+        background-image: url(../images/number_line/keypad/red.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keyorange {
+        background-image: url(../images/number_line/keypad/orange.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keygreen {
+        background-image: url(../images/number_line/keypad/green.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keyblue {
+        background-image: url(../images/number_line/keypad/blue.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keyleftbrc {
+        background-image: url(../images/number_line/keypad/key_leftbrace.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keyleftbrc:hover {
+        background-image: url(../images/number_line/keypad/key_leftbrace_hover.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keyrgtbrc {
+        background-image: url(../images/number_line/keypad/key_rightbrace.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keyrgtbrc:hover {
+        background-image: url(../images/number_line/keypad/key_rightbrace_hover.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keydollar {
+        background-image: url(../images/number_line/keypad/key_dollar.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keydollar:hover {
+        background-image: url(../images/number_line/keypad/key_dollar_hover.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keybackslash {
+        background-image: url(../images/number_line/keypad/key_frwdslash.png); }
+      .number-lines-container #jumpKeypadSection .keypadcontainer .keybackslash:hover {
+        background-image: url(../images/number_line/keypad/key_frwdslash_hover.png); }
+  .number-lines-container .ui-widget-overlay {
+    background-image: url(../images/number_line/overlay/overlay_background.png) !important;
+    width: 100%;
+    height: 100%;
+    z-index: 106 !important; }
+  .number-lines-container #startover-message, .number-lines-container #clean-line-message, .number-lines-container #whole-number-message, .number-lines-container #no-number-message, .number-lines-container #fraction-number-message, .number-lines-container #decimal-number-message, .number-lines-container #go-whlnum-message {
+    background-image: url(../images/number_line/overlay/bg.png) !important;
+    color: #29838f;
+    font-family: ProximaNova;
+    font-size: 20px;
+    height: 153px !important;
+    padding: 0 !important;
+    padding: 0 !important;
+    text-align: center;
+    top: 120px;
+    left: -170px;
+    width: 334px !important;
+    position: relative;
+    z-index: 110 !important; }
+    .number-lines-container #startover-message .startover_text, .number-lines-container #clean-line-message .startover_text, .number-lines-container #whole-number-message .startover_text, .number-lines-container #no-number-message .startover_text, .number-lines-container #fraction-number-message .startover_text, .number-lines-container #decimal-number-message .startover_text, .number-lines-container #go-whlnum-message .startover_text {
+      font-weight: bold;
+      padding: 26px 55px 13px; }
+    .number-lines-container #startover-message .buttons_pane, .number-lines-container #clean-line-message .buttons_pane, .number-lines-container #whole-number-message .buttons_pane, .number-lines-container #no-number-message .buttons_pane, .number-lines-container #fraction-number-message .buttons_pane, .number-lines-container #decimal-number-message .buttons_pane, .number-lines-container #go-whlnum-message .buttons_pane {
+      display: inlilne-block; }
+      .number-lines-container #startover-message .buttons_pane .yes, .number-lines-container #clean-line-message .buttons_pane .yes, .number-lines-container #whole-number-message .buttons_pane .yes, .number-lines-container #no-number-message .buttons_pane .yes, .number-lines-container #fraction-number-message .buttons_pane .yes, .number-lines-container #decimal-number-message .buttons_pane .yes, .number-lines-container #go-whlnum-message .buttons_pane .yes {
+        background-image: url(../images/number_line/overlay/yes.png) !important;
+        width: 82px;
+        height: 34px;
+        display: inline-block;
+        margin-right: 10px;
+        cursor: pointer; }
+      .number-lines-container #startover-message .buttons_pane .yes:hover, .number-lines-container #clean-line-message .buttons_pane .yes:hover, .number-lines-container #whole-number-message .buttons_pane .yes:hover, .number-lines-container #no-number-message .buttons_pane .yes:hover, .number-lines-container #fraction-number-message .buttons_pane .yes:hover, .number-lines-container #decimal-number-message .buttons_pane .yes:hover, .number-lines-container #go-whlnum-message .buttons_pane .yes:hover {
+        background-image: url(../images/number_line/overlay/yes_hover.png) !important; }
+      .number-lines-container #startover-message .buttons_pane .no, .number-lines-container #clean-line-message .buttons_pane .no, .number-lines-container #whole-number-message .buttons_pane .no, .number-lines-container #no-number-message .buttons_pane .no, .number-lines-container #fraction-number-message .buttons_pane .no, .number-lines-container #decimal-number-message .buttons_pane .no, .number-lines-container #go-whlnum-message .buttons_pane .no {
+        background-image: url(../images/number_line/overlay/no.png) !important;
+        width: 82px;
+        height: 34px;
+        display: inline-block;
+        cursor: pointer; }
+      .number-lines-container #startover-message .buttons_pane .no:hover, .number-lines-container #clean-line-message .buttons_pane .no:hover, .number-lines-container #whole-number-message .buttons_pane .no:hover, .number-lines-container #no-number-message .buttons_pane .no:hover, .number-lines-container #fraction-number-message .buttons_pane .no:hover, .number-lines-container #decimal-number-message .buttons_pane .no:hover, .number-lines-container #go-whlnum-message .buttons_pane .no:hover {
+        background-image: url(../images/number_line/overlay/no_hover.png) !important; }
+  .number-lines-container #whole-number-message, .number-lines-container #no-number-message, .number-lines-container #fraction-number-message, .number-lines-container #decimal-number-message, .number-lines-container #go-whlnum-message {
+    background-image: url(../images/number_line/overlay/bg_change_numbering.png) !important;
+    height: 177px !important; }
+    .number-lines-container #whole-number-message .startover_text, .number-lines-container #no-number-message .startover_text, .number-lines-container #fraction-number-message .startover_text, .number-lines-container #decimal-number-message .startover_text, .number-lines-container #go-whlnum-message .startover_text {
+      font-weight: bold;
+      padding: 26px 30px 13px; }
+  .number-lines-container #outer-workspace {
+    position: fixed;
+    margin-left: -50px !important;
+    z-index: 102;
+    width: inherit; }
+  .number-lines-container #blocks-workspace {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    position: relative;
+    left: 47px; }
+    .number-lines-container #blocks-workspace .selected {
+      box-shadow: 0 0 5px 6px rgba(93, 151, 232, 0.6); }
+    .number-lines-container #blocks-workspace .pink {
+      background-color: #bca2ff; }
+    .number-lines-container #blocks-workspace .orange {
+      background-color: #FFD051; }
+    .number-lines-container #blocks-workspace .green {
+      background-color: #82df28; }
+    .number-lines-container #blocks-workspace .blue {
+      background-color: #e9f9f9; }
+    .number-lines-container #blocks-workspace .gray {
+      background-color: #8e8e8e; }
+  .number-lines-container #button_options {
+    background-image: url(../images/number_line/drawingmenu/bg.png); }
+    .number-lines-container #button_options table tr td {
+      padding: 0px !important; }
+      .number-lines-container #button_options table tr td .pen_image:hover {
+        background-image: url(../images/number_line/drawingmenu/pen_hover.png); }
+      .number-lines-container #button_options table tr td .pen_image_selected {
+        background-image: url(../images/number_line/drawingmenu/pen_hover.png);
+        width: 25px;
+        height: 31px;
+        margin-top: 19px;
+        margin-left: 18.5px;
+        cursor: pointer; }
+      .number-lines-container #button_options table tr td .eraser_image:hover {
+        background-image: url(../images/number_line/drawingmenu/eraser_hover.png); }
+      .number-lines-container #button_options table tr td .eraser_image_selected {
+        background-image: url(../images/number_line/drawingmenu/eraser_hover.png) !important;
+        width: 28px;
+        height: 30px;
+        margin-top: 25px;
+        margin-left: 17px;
+        cursor: pointer; }
+      .number-lines-container #button_options table tr td .clear_drawing:hover {
+        background-image: url(../images/number_line/drawingmenu/start_over_hover.png); }
+  .number-lines-container .pentool_hover .colorsicon {
+    background-image: url(../images/number_line/drawingmenu/change_color_drawing.png);
+    width: 124px;
+    height: 17px;
+    top: 4px; }
+  .number-lines-container .pentool_hover .drawpen {
+    background-image: url(../images/number_line/drawingmenu/pen_drawing.png);
+    width: 41px;
+    height: 17px;
+    top: 10px;
+    /*right:0px;*/ }
+  .number-lines-container .pentool_hover .erasericon {
+    background-image: url(../images/number_line/drawingmenu/eraser_drawing.png);
+    width: 60px;
+    height: 17px;
+    top: 10px;
+    /*right:0px;*/ }
+  .number-lines-container .pentool_hover .cleanicon {
+    background-image: url(../images/number_line/drawingmenu/delete_drawing.png);
+    width: 129px;
+    height: 17px;
+    top: 10px;
+    /*right:0px;*/ }
+  .number-lines-container .ui-widget-overlay {
+    background-image: url(../images/number_line/overlay/overlay_background.png) !important;
+    width: 100%;
+    height: 100%;
+    z-index: 106 !important;
+    opacity: 0.6 !important; }
+  .number-lines-container .zoomout_image {
+    background-image: url(../images/number_line/toolbarleft/zoomout.png);
+    width: 30px;
+    height: 32px;
+    margin-left: 2px;
+    cursor: pointer;
+    margin-bottom: 28px;
+    display: inline-block; }
+  .number-lines-container .zoomin_image {
+    background-image: url(../images/number_line/toolbarleft/zoomin.png);
+    width: 36px;
+    height: 32px;
+    cursor: pointer;
+    margin-bottom: 28px;
+    display: inline-block; }
+
+.slider_values {
+  color: #9073d0;
+  display: block;
+  font-size: 19px;
+  font-weight: bold;
+  height: 32px;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  background-image: url(../images/number_line/toolbarleft/sliderbg.png); }
+
+#min {
+  margin-left: 55px;
+  margin-top: 2px; }
+
+#max {
+  float: right;
+  margin-top: 2px;
+  margin-right: 10px !important; }
+
+#slider-2 {
+  margin-left: 295px !important; }
+
+#rulerWrapper {
+  height: 32px;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  z-index: 103; }
+  #rulerWrapper .ui-slider .ui-slider-handle {
+    width: 415px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: -200px !important;
+    background-image: url(../images/number_line/toolbarleft/slider.png); }
+  #rulerWrapper .ui-state-default, #rulerWrapper .ui-widget-content .ui-state-default, #rulerWrapper .ui-widget-header .ui-state-default, #rulerWrapper .ui-button, #rulerWrapper html .ui-button.ui-state-disabled:hover, #rulerWrapper html .ui-button.ui-state-disabled:active {
+    border: 0px solid transparent !important; }
+  #rulerWrapper .ui-widget, #rulerWrapper .manipulatives .ui-widget-content {
+    background: transparent !important;
+    height: 15px !important;
+    width: 56% !important;
+    padding: 0px !important; }
+
+div[id^='ascrail'] {
+  display: block !important; }
+
+/*@media (min-width: 1500px){
+  .number-lines-container{
+    #toolbar{
+	  height:1236px !important;
+	}
+  }
+}
+@media (min-width: 1045px){
+  .number-lines-container{
+    #toolbar{
+	  height:1255px !important;
+	}
+  }
+}
+@media (min-height: 1100px){
+  .number-lines-container{
+    #toolbar{
+	  height:1200px !important;
+	}
+  }
+}
+@media (min-width: 940px) and (max-width: 1043px){
+  .number-lines-container{
+    #toolbar{
+	  height:1274px !important;
+	}
+  }
+}
+@media (min-width: 940px) and (max-width: 940px){
+  .number-lines-container{
+    #toolbar{
+	  height:1293px !important;
+	}
+  }
+}*/
+@media (min-width: 300px) and (max-width: 325px) {
+  .number-lines-container #toolbar {
+    min-height: 1463px !important; }
+  .number-lines-container #rulerWrapper, .number-lines-container .slider_values {
+    bottom: 0px !important; }
+  .number-lines-container #about_div .other_manipulatives {
+    padding-bottom: 35px !important; } }
+@media (min-width: 325px) and (max-width: 600px) {
+  .number-lines-container #toolbar {
+    min-height: 1460px !important; }
+  .number-lines-container #rulerWrapper, .number-lines-container .slider_values {
+    bottom: 0px !important; }
+  .number-lines-container #about_div .other_manipulatives {
+    padding-bottom: 40px !important; } }
+#min, #max, #min .toptxt, #min .bottomtxt, #max .toptxt, #max .bottomtxt {
+  padding: 0 0px; }
+
+#min, #max {
+  display: inline-block;
+  text-align: center; }
+
+#min .bottomtxt, #max .bottomtxt {
+  border-top: 2px solid #9073d0;
+  display: block; }
+
+#min .maintxt, #max .maintxt {
+  float: left;
+  margin: 0px; }
+
+#min .subtxt, #max .subtxt {
+  float: left;
+  margin: 0px;
+  font-size: 10px;
+  padding-left: 4px; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .number-lines-container #toolbar {
+    min-height: 1281px !important; } }
+
+/*# sourceMappingURL=index.css.map */

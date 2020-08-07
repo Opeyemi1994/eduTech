@@ -1,0 +1,496 @@
+body {
+  font-family: ProximaNova;
+  background-image: url(../images/patternblocks_bg.png) !important; }
+
+.pattern-blocks-container {
+  /* for number block disabling*/ }
+  .pattern-blocks-container .color_splashes .color_links .color_icons {
+    margin-left: 13px !important; }
+  .pattern-blocks-container #pattern-puzzles {
+    background-image: url(../images/pattern_blocks/pattern_dropdown/bg.png);
+    background-position: 0 -4px;
+    background-repeat: no-repeat;
+    display: none;
+    height: 448px;
+    left: 877px;
+    overflow: hidden;
+    position: absolute;
+    top: 88.2px;
+    width: 368px;
+    z-index: 114; }
+    .pattern-blocks-container #pattern-puzzles .pattern_top_shadow {
+      box-shadow: 0 2px 2px 0 #c4c4c4;
+      height: 2px;
+      margin-bottom: 21px;
+      margin-left: 3px;
+      margin-top: -2px;
+      width: 362px; }
+    .pattern-blocks-container #pattern-puzzles .titlebar .title {
+      background-image: url(../images/pattern_blocks/pattern_dropdown/title.png);
+      background-repeat: no-repeat;
+      height: 28px;
+      margin: 0 auto;
+      width: 214px; }
+    .pattern-blocks-container #pattern-puzzles .highlight {
+      display: none; }
+    .pattern-blocks-container #pattern-puzzles .puzzle {
+      cursor: pointer;
+      display: inline-block;
+      height: 77px;
+      position: relative;
+      width: 70px;
+      margin: 0 4px 13px;
+      text-align: center;
+      margin-bottom: 13px;
+      vertical-align: top; }
+      .pattern-blocks-container #pattern-puzzles .puzzle .icon {
+        border: 5px solid transparent; }
+    .pattern-blocks-container #pattern-puzzles .snow3, .pattern-blocks-container #pattern-puzzles .snow4, .pattern-blocks-container #pattern-puzzles .heart {
+      padding-top: 5px;
+      height: 72px; }
+    .pattern-blocks-container #pattern-puzzles .flower3 {
+      margin-top: -6px; }
+    .pattern-blocks-container #pattern-puzzles .wheel {
+      padding-top: 3px;
+      height: 74px; }
+    .pattern-blocks-container #pattern-puzzles .train {
+      padding-top: 10px;
+      height: 62px; }
+    .pattern-blocks-container #pattern-puzzles .duck {
+      padding-top: 20px;
+      height: 52px; }
+    .pattern-blocks-container #pattern-puzzles .rocket {
+      padding-top: 13px;
+      height: 64px; }
+    .pattern-blocks-container #pattern-puzzles .puzzle:hover .icon {
+      display: none; }
+    .pattern-blocks-container #pattern-puzzles .puzzle:hover .highlight {
+      display: inline;
+      border: 0px; }
+    .pattern-blocks-container #pattern-puzzles .puzzlestop {
+      padding: 10px 20px; }
+  .pattern-blocks-container #top_menu_overlay {
+    background-color: #ffffff;
+    height: 85px;
+    left: 226px;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 83%;
+    display: none; }
+  .pattern-blocks-container #workspace {
+    width: inherit;
+    background-image: url(../images/patternblocks_bg.png) !important; }
+  .pattern-blocks-container #about_div {
+    background-image: url(../images/pattern_blocks/about_bg.png) !important;
+    -webkit-box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.18);
+    box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.18); }
+    .pattern-blocks-container #about_div .about_title, .pattern-blocks-container #about_div .about_text, .pattern-blocks-container #about_div .other_manipulatives {
+      color: #ab8b55; }
+    .pattern-blocks-container #about_div .about_text {
+      padding-right: 10px; }
+  .pattern-blocks-container #overlayDivFrame, .pattern-blocks-container #overlayDivCounter, .pattern-blocks-container #howitworksoverlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    display: none;
+    top: 0px; }
+  .pattern-blocks-container #howitworksoverlay {
+    z-index: 200;
+    background-image: url(../images/howitworks_bg.png);
+    width: 100%;
+    min-height: 2222px;
+    height: 100%; }
+  .pattern-blocks-container .toolbar_hover {
+    width: 240px !important; }
+  .pattern-blocks-container .toolbar_new {
+    background-repeat: repeat-y !important;
+    height: 2135px !important; }
+  .pattern-blocks-container #toolbar {
+    background-image: url(../images/pattern_blocks/toolbarleft/bg.png);
+    background-repeat: repeat-y;
+    padding-top: 0px !important;
+    min-height: 1194px;
+    bottom: 0px !important;
+    top: 89px; }
+    .pattern-blocks-container #toolbar .top_shadow {
+      background-image: url(../images/pattern_blocks/toolbarleft/bg.png);
+      width: 47px;
+      height: 2px;
+      -webkit-box-shadow: 0px 2px 2px 0px #b8b8b8;
+      -moz-box-shadow: 0px 2px 2px 0px #b8b8b8;
+      box-shadow: 0px 2px 2px 0px #b8b8b8;
+      margin-bottom: 31px;
+      margin-top: -2px; }
+    .pattern-blocks-container #toolbar .second_seperator {
+      margin-bottom: 24px !important; }
+    .pattern-blocks-container #toolbar .clear_all_image {
+      margin-bottom: 17px !important;
+      margin-left: 3.5px; }
+    .pattern-blocks-container #toolbar .pen_tool_image {
+      margin-bottom: 27px !important;
+      margin-left: 15px !important; }
+    .pattern-blocks-container #toolbar .trash_image {
+      margin-bottom: 22px !important;
+      margin-left: 13px !important; }
+    .pattern-blocks-container #toolbar .septwo {
+      margin-bottom: 22px !important; }
+    .pattern-blocks-container #toolbar .keypad_image {
+      margin-bottom: 25px !important;
+      margin-left: 12px !important; }
+    .pattern-blocks-container #toolbar .info_image {
+      margin-top: 2px;
+      margin-left: 12.5px !important; }
+    .pattern-blocks-container #toolbar .left-icon {
+      display: block;
+      position: relative; }
+      .pattern-blocks-container #toolbar .left-icon .custom-tool-tip {
+        position: absolute;
+        left: 55px;
+        z-index: 102;
+        height: 17px;
+        display: inline-block; }
+      .pattern-blocks-container #toolbar .left-icon .clear_all_label {
+        background-image: url(../images/pattern_blocks/toolbarleft/startover.png);
+        width: 80px;
+        height: 17px;
+        display: inline-block;
+        top: 2px; }
+      .pattern-blocks-container #toolbar .left-icon .duplicate_frame_image {
+        background-image: url(../images/pattern_blocks/toolbarleft/duplicate.png);
+        width: 23px;
+        height: 23px;
+        margin-left: 12px;
+        margin-top: 5px;
+        cursor: pointer;
+        margin-bottom: 25px;
+        display: inline-block;
+        background-repeat: no-repeat; }
+      .pattern-blocks-container #toolbar .left-icon .duplicate_frame_label {
+        background-image: url(../images/pattern_blocks/toolbarleft/duplicate_label.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 165px;
+        height: 17px;
+        margin-top: 10px; }
+      .pattern-blocks-container #toolbar .left-icon .protractor_table_label {
+        background-image: url(../images/pattern_blocks/toolbarleft/protractor.png);
+        width: 53px;
+        height: 39px;
+        margin-left: 12px;
+        cursor: pointer;
+        display: inline-block;
+        top: 2px;
+        background-repeat: no-repeat; }
+      .pattern-blocks-container #toolbar .left-icon .protractor_label {
+        background-image: url(../images/pattern_blocks/toolbarleft/protractor_label.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 165px;
+        height: 17px;
+        top: 2px; }
+      .pattern-blocks-container #toolbar .left-icon .calculator_label {
+        background-image: url(../images/pattern_blocks/toolbarleft/keypad_label.png);
+        width: 59px;
+        height: 17px;
+        display: inline-block;
+        top: 2px; }
+      .pattern-blocks-container #toolbar .left-icon .pen_tool_label {
+        background-image: url(../images/pattern_blocks/toolbarleft/drawing_label.png);
+        width: 105px;
+        height: 17px;
+        display: inline-block;
+        top: 2px; }
+      .pattern-blocks-container #toolbar .left-icon .trash_label {
+        background-image: url(../images/pattern_blocks/toolbarleft/delete_label.png);
+        width: 158px;
+        height: 17px;
+        display: inline-block;
+        top: 2px; }
+      .pattern-blocks-container #toolbar .left-icon .info_label {
+        background-image: url(../images/pattern_blocks/toolbarleft/help_label.png);
+        width: 43px;
+        height: 17px;
+        display: inline-block;
+        top: 2px; }
+    .pattern-blocks-container #toolbar .color_splashes {
+      height: 219px; }
+      .pattern-blocks-container #toolbar .color_splashes .color_links .beige {
+        background-image: url(../images/pattern_blocks/toolbarleft/beige.png); }
+      .pattern-blocks-container #toolbar .color_splashes .color_links .beige:hover {
+        background-image: url(../images/pattern_blocks/toolbarleft/beige_hover.png); }
+      .pattern-blocks-container #toolbar .color_splashes .color_links .yellow {
+        background-image: url(../images/pattern_blocks/toolbarleft/yellow.png); }
+      .pattern-blocks-container #toolbar .color_splashes .color_links .yellow:hover {
+        background-image: url(../images/pattern_blocks/toolbarleft/yellow_hover.png); }
+      .pattern-blocks-container #toolbar .color_splashes .color_links .orange {
+        background-image: url(../images/pattern_blocks/toolbarleft/orange.png);
+        margin-bottom: 6px; }
+      .pattern-blocks-container #toolbar .color_splashes .color_links .orange:hover {
+        background-image: url(../images/pattern_blocks/toolbarleft/orange_hover.png); }
+      .pattern-blocks-container #toolbar .color_splashes .color_links .green {
+        background-image: url(../images/pattern_blocks/toolbarleft/green.png); }
+      .pattern-blocks-container #toolbar .color_splashes .color_links .green:hover {
+        background-image: url(../images/pattern_blocks/toolbarleft/green_hover.png); }
+      .pattern-blocks-container #toolbar .color_splashes .color_links .grey {
+        background-image: url(../images/pattern_blocks/toolbarleft/gray.html); }
+      .pattern-blocks-container #toolbar .color_splashes .color_links .grey:hover {
+        background-image: url(../images/pattern_blocks/toolbarleft/gray_hover.html); }
+      .pattern-blocks-container #toolbar .color_splashes .color_links .red {
+        background-image: url(../images/pattern_blocks/toolbarleft/red.png);
+        margin-bottom: 6px; }
+      .pattern-blocks-container #toolbar .color_splashes .color_links .red:hover {
+        background-image: url(../images/pattern_blocks/toolbarleft/red_hover.png); }
+      .pattern-blocks-container #toolbar .color_splashes .color_links .blue {
+        background-image: url(../images/pattern_blocks/toolbarleft/blue.png); }
+      .pattern-blocks-container #toolbar .color_splashes .color_links .blue:hover {
+        background-image: url(../images/pattern_blocks/toolbarleft/blue_hover.png); }
+      .pattern-blocks-container #toolbar .color_splashes .color_links .left-icon {
+        display: block;
+        position: relative; }
+        .pattern-blocks-container #toolbar .color_splashes .color_links .left-icon .custom-tool-tip {
+          position: absolute;
+          left: 55px;
+          z-index: 102; }
+        .pattern-blocks-container #toolbar .color_splashes .color_links .left-icon .red_hover {
+          background-image: url(../images/pattern_blocks/toolbarleft/colors.png);
+          background-repeat: no-repeat;
+          display: inline-block;
+          width: 142px;
+          height: 17px; }
+        .pattern-blocks-container #toolbar .color_splashes .color_links .left-icon .orange_hover {
+          background-image: url(../images/pattern_blocks/toolbarleft/colors.png);
+          background-repeat: no-repeat;
+          display: inline-block;
+          width: 142px;
+          height: 17px; }
+        .pattern-blocks-container #toolbar .color_splashes .color_links .left-icon .yellow_hover {
+          background-image: url(../images/pattern_blocks/toolbarleft/colors.png);
+          background-repeat: no-repeat;
+          display: inline-block;
+          width: 142px;
+          height: 17px; }
+        .pattern-blocks-container #toolbar .color_splashes .color_links .left-icon .green_hover {
+          background-image: url(../images/pattern_blocks/toolbarleft/colors.png);
+          background-repeat: no-repeat;
+          display: inline-block;
+          width: 142px;
+          height: 17px; }
+        .pattern-blocks-container #toolbar .color_splashes .color_links .left-icon .blue_hover {
+          background-image: url(../images/pattern_blocks/toolbarleft/colors.png);
+          background-repeat: no-repeat;
+          display: inline-block;
+          width: 142px;
+          height: 17px; }
+        .pattern-blocks-container #toolbar .color_splashes .color_links .left-icon .beige_hover {
+          background-image: url(../images/pattern_blocks/toolbarleft/colors.png);
+          background-repeat: no-repeat;
+          display: inline-block;
+          width: 142px;
+          height: 17px; }
+    .pattern-blocks-container #toolbar .duplicate_frame_image:hover {
+      background-image: url(../images/pattern_blocks/toolbarleft/duplicate_hover.png); }
+    .pattern-blocks-container #toolbar .protractor_table_label:hover {
+      background-image: url(../images/pattern_blocks/toolbarleft/protractor_hover.png); }
+    .pattern-blocks-container #toolbar .keypad_image:hover {
+      background-image: url(../images/pattern_blocks/toolbarleft/keypad_hover.png); }
+    .pattern-blocks-container #toolbar .pen_tool_image:hover {
+      background-image: url(../images/pattern_blocks/toolbarleft/pen_hover.png); }
+    .pattern-blocks-container #toolbar .trash_image:hover {
+      background-image: url(../images/pattern_blocks/toolbarleft/trash_hover.png); }
+    .pattern-blocks-container #toolbar .seperator {
+      background-image: url(../images/pattern_blocks/toolbarleft/divider.png);
+      width: 25px;
+      height: 2px;
+      margin-left: 11px;
+      margin-bottom: 21px; }
+    .pattern-blocks-container #toolbar .second_seperator {
+      background-image: url(../images/pattern_blocks/toolbarleft/divider.png);
+      width: 25px;
+      height: 2px;
+      margin-left: 11px;
+      margin-bottom: 24px; }
+    .pattern-blocks-container #toolbar .clear_all_image:hover {
+      background-image: url(../images/pattern_blocks/toolbarleft/start_over_hover.png); }
+    .pattern-blocks-container #toolbar .info_image:hover {
+      background-image: url(../images/pattern_blocks/toolbarleft/info_hover.png); }
+  .pattern-blocks-container #button_options {
+    /*background-image:url(/sites/default/files/manipulatives/pattern-blocks/images/pattern_blocks/drawingmenu/bg.png);*/
+    height: 349px !important; }
+    .pattern-blocks-container #button_options table tr td {
+      padding: 0px !important; }
+      .pattern-blocks-container #button_options table tr td .pen_image:hover {
+        background-image: url(../images/pattern_blocks/drawingmenu/pen_hover.png); }
+      .pattern-blocks-container #button_options table tr td .eraser_image:hover {
+        background-image: url(../images/pattern_blocks/drawingmenu/eraser_hover.png); }
+      .pattern-blocks-container #button_options table tr td .clear_drawing:hover {
+        background-image: url(../images/pattern_blocks/drawingmenu/start_over_hover.png); }
+  .pattern-blocks-container .ui-widget-overlay {
+    background-image: url(../images/pattern_blocks/overlay/overlay_background.png) !important;
+    width: 100%;
+    height: 100%;
+    z-index: 106 !important; }
+  .pattern-blocks-container #startover-message {
+    background-image: url(../images/pattern_blocks/overlay/bg.png) !important;
+    color: #3993c2;
+    font-family: ProximaNova;
+    font-size: 22px;
+    height: 153px !important;
+    padding: 0 !important;
+    padding: 0 !important;
+    text-align: center;
+    width: 334px !important;
+    position: relative;
+    left: -170px;
+    top: 120px;
+    z-index: 110 !important; }
+    .pattern-blocks-container #startover-message .startover_text {
+      font-weight: bold;
+      width: 220px;
+      padding-top: 38px;
+      padding: 26px 55px 13px; }
+    .pattern-blocks-container #startover-message .buttons_pane {
+      display: inlilne-block; }
+      .pattern-blocks-container #startover-message .buttons_pane .yes {
+        background-image: url(../images/pattern_blocks/overlay/yes.png) !important;
+        width: 82px;
+        height: 34px;
+        display: inline-block;
+        margin-right: 10px;
+        cursor: pointer; }
+      .pattern-blocks-container #startover-message .buttons_pane .yes:hover {
+        background-image: url(../images/pattern_blocks/overlay/yes_hover.png) !important; }
+      .pattern-blocks-container #startover-message .buttons_pane .no {
+        background-image: url(../images/pattern_blocks/overlay/no.png) !important;
+        width: 82px;
+        height: 34px;
+        display: inline-block;
+        cursor: pointer; }
+      .pattern-blocks-container #startover-message .buttons_pane .no:hover {
+        background-image: url(../images/pattern_blocks/overlay/no_hover.png) !important; }
+  .pattern-blocks-container #clean-line-message {
+    background-image: url(../images/pattern_blocks/overlay/bg.png) !important;
+    color: #3993c2;
+    font-family: ProximaNova;
+    font-size: 22px;
+    height: 153px !important;
+    padding: 0 !important;
+    padding: 0 !important;
+    text-align: center;
+    width: 334px !important;
+    position: relative;
+    left: -170px;
+    top: 120px;
+    z-index: 110 !important; }
+    .pattern-blocks-container #clean-line-message .startover_text {
+      font-weight: bold;
+      padding: 32px 48px 13px 56px; }
+    .pattern-blocks-container #clean-line-message .buttons_pane {
+      display: inlilne-block; }
+      .pattern-blocks-container #clean-line-message .buttons_pane .yes {
+        background-image: url(../images/pattern_blocks/overlay/yes.png) !important;
+        width: 82px;
+        height: 34px;
+        display: inline-block;
+        margin-right: 10px;
+        cursor: pointer; }
+      .pattern-blocks-container #clean-line-message .buttons_pane .yes:hover {
+        background-image: url(../images/pattern_blocks/overlay/yes_hover.png) !important; }
+      .pattern-blocks-container #clean-line-message .buttons_pane .no {
+        background-image: url(../images/pattern_blocks/overlay/no.png) !important;
+        width: 82px;
+        height: 34px;
+        display: inline-block;
+        cursor: pointer; }
+      .pattern-blocks-container #clean-line-message .buttons_pane .no:hover {
+        background-image: url(../images/pattern_blocks/overlay/no_hover.png) !important; }
+  .pattern-blocks-container #blocks-workspace .selected {
+    box-shadow: 0 0 5px 6px rgba(93, 151, 232, 0.6); }
+  .pattern-blocks-container #blocks-workspace canvas {
+    position: absolute; }
+  .pattern-blocks-container #blocks-workspace .red {
+    background-color: #bca2ff; }
+  .pattern-blocks-container #blocks-workspace .orange {
+    background-color: #FFD051; }
+  .pattern-blocks-container #blocks-workspace .green {
+    background-color: #82df28; }
+  .pattern-blocks-container #blocks-workspace .blue {
+    background-color: #e9f9f9; }
+  .pattern-blocks-container #blocks-workspace .gray {
+    background-color: #8e8e8e; }
+  .pattern-blocks-container #button_options {
+    background-image: url(../images/pattern_blocks/drawingmenu/bg.png); }
+    .pattern-blocks-container #button_options table tr td {
+      padding: 0px !important; }
+      .pattern-blocks-container #button_options table tr td .pen_image:hover {
+        background-image: url(../images/pattern_blocks/drawingmenu/pen_hover.png); }
+      .pattern-blocks-container #button_options table tr td .pen_image_selected {
+        background-image: url(../images/pattern_blocks/drawingmenu/pen_hover.png);
+        width: 25px;
+        height: 31px;
+        margin-top: 19px;
+        margin-left: 18.5px;
+        cursor: pointer; }
+      .pattern-blocks-container #button_options table tr td .eraser_image:hover {
+        background-image: url(../images/pattern_blocks/drawingmenu/eraser_hover.png); }
+      .pattern-blocks-container #button_options table tr td .eraser_image_selected {
+        background-image: url(../images/pattern_blocks/drawingmenu/eraser_hover.png) !important;
+        width: 28px;
+        height: 30px;
+        margin-top: 25px;
+        margin-left: 17px;
+        cursor: pointer; }
+      .pattern-blocks-container #button_options table tr td .clear_drawing:hover {
+        background-image: url(../images/pattern_blocks/drawingmenu/start_over_hover.png); }
+  .pattern-blocks-container .pentool_hover .colorsicon {
+    background-image: url(../images/pattern_blocks/drawingmenu/change_color_drawing.png);
+    width: 124px;
+    height: 17px;
+    top: 4px; }
+  .pattern-blocks-container .pentool_hover .drawpen {
+    background-image: url(../images/pattern_blocks/drawingmenu/pen_drawing.png);
+    width: 41px;
+    height: 17px;
+    top: 10px;
+    /*right:0px;*/ }
+  .pattern-blocks-container .pentool_hover .erasericon {
+    background-image: url(../images/pattern_blocks/drawingmenu/eraser_drawing.png);
+    width: 60px;
+    height: 17px;
+    top: 10px;
+    /*right:0px;*/ }
+  .pattern-blocks-container .pentool_hover .cleanicon {
+    background-image: url(../images/pattern_blocks/drawingmenu/delete_drawing.png);
+    width: 129px;
+    height: 17px;
+    top: 10px;
+    /*right:0px;*/ }
+  .pattern-blocks-container .ui-widget-overlay {
+    background-image: url(../images/pattern_blocks/overlay/overlay_background.png) !important;
+    width: 100%;
+    height: 100%;
+    z-index: 106 !important;
+    opacity: 0.6 !important; }
+  .pattern-blocks-container .deselected_toolbar_number_group .group_image, .pattern-blocks-container .deselected_toolbar_number_group .group_image:hover {
+    background-image: url(../images/pattern_blocks/toolbarleft/group_hover.html);
+    opacity: 0.5; }
+  .pattern-blocks-container .deselected_toolbar_number_ungroup .ungroup_image, .pattern-blocks-container .deselected_toolbar_number_ungroup .ungroup_image:hover {
+    background-image: url(../images/pattern_blocks/toolbarleft/ungroup_hover.html);
+    opacity: 0.5; }
+  .pattern-blocks-container .deselected_toolbar_number_calc .keypad_image, .pattern-blocks-container .deselected_toolbar_number_calc .keypad_image:hover {
+    /*background-image:url(/sites/default/files/manipulatives/pattern-blocks/images/toolbar/keypad.png);*/
+    opacity: 1; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .pattern-blocks-container #pattern-puzzles {
+    top: 88.2px; } }
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-width: 1400px) {
+  .pattern-blocks-container #pattern-puzzles {
+    top: 88.2px; } }
+@media (min-width: 1400px) {
+  .pattern-blocks-container #pattern-puzzles {
+    top: 90.2px; } }
+
+/*# sourceMappingURL=index.css.map */

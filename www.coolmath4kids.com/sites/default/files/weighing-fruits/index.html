@@ -1,0 +1,67 @@
+<html>
+    
+<!-- Mirrored from www.coolmath4kids.com/sites/default/files/weighing-fruits/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Aug 2020 12:02:15 GMT -->
+<head>
+        <title>Weighing Fruits</title>
+		<meta name="description" content="Weighing Fruits">
+		<meta name="keywords" content="HTML5,Weighing,Math,Flashbimo">
+		<meta name="author" content="Flashbimo Studio">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=.3, maximum-scale=1, user-scalable=no">  
+		<meta name="apple-mobile-web-app-capable" content="no">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">     
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #000;
+            }            
+            #canvas {
+                background-color: #000;
+            }            
+            @font-face {
+                font-family:'Carter One';
+                src: url(fonts/CarterOne.woff) format('woff');				
+            }
+			@font-face {
+                font-family:'Open Sans';
+                src: url(fonts/OpenSans-Bold.woff) format('woff');				
+            }
+			@font-face {
+                font-family:'Soup of Justice';
+                src: url(fonts/SoupOfJustice.woff) format('woff');				
+            }
+			@font-face {
+                font-family:'Changa One';
+                src: url(fonts/ChangaOne.woff) format('woff');				
+            }
+			@font-face {
+                font-family:'Always Here';
+				src: url(fonts/AlwaysHere.woff) format('woff');				
+            }
+			@font-face {
+                font-family:'Nulshock Bd';
+                src: url(fonts/NulshockBd.woff) format('woff');			
+            }
+			@font-face {
+                font-family:'KGSC Solid';
+                src: url(fonts/KGSecondChancesSolid.woff) format('woff');				
+            }	
+        </style>      
+    </head>
+    <body>
+        <!-- CANVAS -->
+        <canvas id="canvas" width="720" height="480" class="game"></canvas>
+		<!-- SCRIPT -->
+		<script src="scaler.js"></script>
+        <script src="jquery.min.js"></script>
+        <script src="weighing.js"></script>        
+        <script>
+        var element = document.getElementById('canvas');        
+        new AutoScaler(element, 720, 480, 0.95);
+		new Weighs(element).boot();        
+        </script>
+    </body>
+
+<!-- Mirrored from www.coolmath4kids.com/sites/default/files/weighing-fruits/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Aug 2020 12:02:22 GMT -->
+</html>
